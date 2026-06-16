@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+  <testcase name='' description='script generated from Web Designer' author='appvance' version='webDesigner'>
+    <dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <fallback useFallback='true'></fallback>
+    <shadowDOM useShadowDOM='true'></shadowDOM>
+    <step action='navigateTo' value='"https://demosite.appvance.net/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3e9b115e-65f0-47ef-9dad-9188a3c95afb' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='store' value='takeHtmlSnapshot()' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fa1d74e1-c24c-4b74-883c-7d09789b9832' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='img' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='log' value='img' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3b2e83b8-001b-402d-80d5-a6c3e369e1d6' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='aiAssertion' value='img' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ce30d0c7-91dc-4902-9385-2d31e9e1d6cf' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='"The UI seems a like a video game store"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='"The UI seems a like a video game site"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='"The UI seems a like an ecommerse site"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='"The UI seems a like ecommerse site"' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+  </testcase>
