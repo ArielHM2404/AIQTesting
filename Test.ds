@@ -4,9 +4,7 @@
     <fallback useFallback='true'></fallback>
     <shadowDOM useShadowDOM='true'></shadowDOM>
     <step action='selectWindow' value='"Setting Browser Session"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e0eb3995-4a7a-49d7-aa25-394e42a7d26f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='' value='' selected='true' fallback='false'></accessor>
-      </dialect>
+      <dialect type='sahi'></dialect>
     </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6e75610e-f408-44ff-9589-8d7c8565093a' uiType='base'>
       <dialect type='sahi'>
@@ -16,9 +14,7 @@
       </dialect>
     </step>
     <step action='navigateTo' value='"https://demosite.appvance.net/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1ff5fb5b-3ac1-4173-8eb8-dcf701785c77' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='' value='' selected='true' fallback='false'></accessor>
-      </dialect>
+      <dialect type='sahi'></dialect>
     </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c95b4fcd-94b1-4fc7-aa46-6af9495cbfc5' uiType='base'>
       <dialect type='sahi'>
@@ -162,7 +158,30 @@
         <accessor type='JQuery' value='byJQuery(&apos;button[name="button"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32201ca1-96aa-4d78-b3a9-93a743d5f1ea' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0dc94ca5-3b55-4b21-8156-dfc3ea60517c' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='XPathId' value='byXPath(&apos;//*[@id="checkout-link"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='AttrClass' value='submit("btn btn-lg btn-success")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathName' value='byXPath(&apos;//*[@name="checkout"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='Id' value='submit("checkout-link")' selected='false' fallback='true'></accessor>
+        <accessor type='AttrName' value='submit("checkout")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='submit("Checkout")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="btn btn-lg btn-success"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[2]/div/div/div/div/form/div/div[2]/div/button[2]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;checkout-link&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;checkout-link&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;div[class="links col-md-3 navbar-form pull-right text-right"] &gt; div[class="form-group"] &gt; button[class="btn btn-lg btn-success"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;#checkout-link&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;button[name="checkout"]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ae47a8a8-02cf-469b-9b47-b4622d566b4f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='filePath' value='"{ds}/Library_checkout_Login.ds"' selected='true' fallback='true'></accessor>
+        <accessor type='filePath' value='"{ds}/Library.ds"' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32201ca1-96aa-4d78-b3a9-93a743d5f1ea' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='link("continue")' selected='true' fallback='true'></accessor>
         <accessor type='AttrHref' value='link("/products")' selected='false' fallback='true'></accessor>
@@ -179,7 +198,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;a[href="/products"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"5"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a16b2eac-3747-4755-8e21-99fa29da8375' uiType='base'>
+    <step action='setValue' value='"5"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a16b2eac-3747-4755-8e21-99fa29da8375' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="quantity"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='numberbox("form-control title")' selected='false' fallback='true'></accessor>
@@ -197,7 +216,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value="1"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e3c195d8-d49d-4036-979d-f5cb6f42d401' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e3c195d8-d49d-4036-979d-f5cb6f42d401' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="add-to-cart-button"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='submit("btn btn-success[1]")' selected='false' fallback='true'></accessor>
@@ -215,7 +234,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;button[name="button"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"ahm@cbord.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='21f3d510-3e47-4bc3-ab67-1118e667a30e' uiType='base'>
+    <step action='setValue' value='"ahm@cbord.com"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='21f3d510-3e47-4bc3-ab67-1118e667a30e' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_email"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='emailbox("form-control title")' selected='false' fallback='true'></accessor>
@@ -231,7 +250,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[email]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4f53ea55-df5c-4e6a-94df-26936365e511' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4f53ea55-df5c-4e6a-94df-26936365e511' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='submit("btn btn-block btn-lg btn-success[1]")' selected='true' fallback='true'></accessor>
         <accessor type='AttrName' value='submit("commit[1]")' selected='false' fallback='true'></accessor>
@@ -243,7 +262,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value="Continue"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"Test"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b44e98da-b19c-42cb-a7d5-53c05a43bd0b' uiType='base'>
+    <step action='setValue' value='"Test"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b44e98da-b19c-42cb-a7d5-53c05a43bd0b' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_firstname"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control")' selected='false' fallback='true'></accessor>
@@ -261,7 +280,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][firstname]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"Testing"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0c08efea-9eac-474b-bbc0-d556a717bcaa' uiType='base'>
+    <step action='setValue' value='"Testing"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0c08efea-9eac-474b-bbc0-d556a717bcaa' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_lastname"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control[1]")' selected='false' fallback='true'></accessor>
@@ -277,7 +296,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][lastname]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"test001 RD street"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='40fab74f-8fe9-4e35-8f1c-8d7cb0fc5da8' uiType='base'>
+    <step action='setValue' value='"test001 RD street"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='40fab74f-8fe9-4e35-8f1c-8d7cb0fc5da8' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_address1"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control required")' selected='false' fallback='true'></accessor>
@@ -295,7 +314,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][address1]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"Alaska"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='aaaff7a5-3483-4a08-9b01-6171a23ddb95' uiType='base'>
+    <step action='setValue' value='"Alaska"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='aaaff7a5-3483-4a08-9b01-6171a23ddb95' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_city"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control[3]")' selected='false' fallback='true'></accessor>
@@ -311,7 +330,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][city]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setSelected' value='"Florida"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='89b0c48e-fcef-45e9-955d-30ed60a867f5' uiType='base'>
+    <step action='setSelected' value='"Florida"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='89b0c48e-fcef-45e9-955d-30ed60a867f5' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_state_id"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='select("form-control required")' selected='false' fallback='true'></accessor>
@@ -328,7 +347,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;select[name="order[bill_address_attributes][state_id]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"12542"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ba044386-eab2-4e02-8d78-97996d6a36ff' uiType='base'>
+    <step action='setValue' value='"12542"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ba044386-eab2-4e02-8d78-97996d6a36ff' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_zipcode"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control[4]")' selected='false' fallback='true'></accessor>
@@ -344,7 +363,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][zipcode]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"2334538765"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='959a88ff-88ca-4a3a-bdb3-073e70bf457c' uiType='base'>
+    <step action='setValue' value='"2334538765"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='959a88ff-88ca-4a3a-bdb3-073e70bf457c' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="order_bill_address_attributes_phone"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='telephonebox("form-control")' selected='false' fallback='true'></accessor>
@@ -361,7 +380,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="order[bill_address_attributes][phone]"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5c600d7f-1a87-4716-bc3a-b6eb1eaf7f76' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5c600d7f-1a87-4716-bc3a-b6eb1eaf7f76' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='submit("btn btn-lg btn-success")' selected='true' fallback='true'></accessor>
         <accessor type='XPathName' value='byXPath(&apos;//*[@name="commit"]&apos;)' selected='false' fallback='true'></accessor>
@@ -378,7 +397,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value="Save and Continue"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='7169167d-3f9d-4e04-8f8b-e59d90ad52b5' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='7169167d-3f9d-4e04-8f8b-e59d90ad52b5' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='span("rate-name[2]")' selected='true' fallback='true'></accessor>
         <accessor type='Text' value='span("UPS One Day (USD)")' selected='false' fallback='true'></accessor>
@@ -387,7 +406,7 @@
         <accessor type='XPath' value='byXPath("//div[@id=&apos;methods&apos;]/div/ul/li[3]/label/span[1]")' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fbb497de-cb74-48ea-969f-04ac57f1fc4c' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fbb497de-cb74-48ea-969f-04ac57f1fc4c' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='submit("btn btn-lg btn-success")' selected='true' fallback='true'></accessor>
         <accessor type='XPathName' value='byXPath(&apos;//*[@name="commit"]&apos;)' selected='false' fallback='true'></accessor>
