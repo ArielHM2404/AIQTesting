@@ -83,7 +83,8 @@
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='46427424-af5e-43a4-adeb-556df1c29e88' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='assertTextPresent("Rails");' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent("Raails");' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent("Rails");' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertTextPresent("Rails")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertTextPresent' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assert' selected='false' fallback='true'></accessor>
