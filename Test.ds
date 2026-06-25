@@ -83,11 +83,18 @@
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='46427424-af5e-43a4-adeb-556df1c29e88' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='test' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent("Rails");' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent("Rails")' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assert' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='test' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='ifTrue' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='log' value='Testing iff&#10;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='670afcde-e1a5-42c6-9bb4-63b9707e8ea8' uiType='base'>
+    <step action='log' value='&#10;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='670afcde-e1a5-42c6-9bb4-63b9707e8ea8' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='log' value='"Testing"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='fdbf7d6c-3802-45e9-8be1-acdcb8d703fc' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
     <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b02382ed-2541-42c4-b0a0-bfbe74d691e9' uiType='end' sibling='46427424-af5e-43a4-adeb-556df1c29e88'>
